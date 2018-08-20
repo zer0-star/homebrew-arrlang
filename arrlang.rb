@@ -10,6 +10,6 @@ class Arrlang < Formula
   end
 
   test do
-    system "bin/macosx/arrlang", "-h"
+    system "#{bin}/arrlang", "-h"
   end
 end
