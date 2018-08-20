@@ -1,15 +1,15 @@
 class Arrlang < Formula
   desc "The best language powered by \"ARROW\""
   homepage "https://github.com/zer0-star/arrlang"
-  url "https://github.com/zer0-star/arrlang/archive/v0.0.3.tar.gz"
-  sha256 "ecdfc43caebefcab1bf3c97b2c5d8e4f9f09e17171005aea7b6a0bae0d430cdd"
-  head "https://github.com/zer0-star/arrlang.git", :tag => "v0.0.3"
+  url "https://github.com/zer0-star/arrlang/archive/v0.1.0.tar.gz"
+  sha256 "867e4a7aeddfe893653fb29c18fa17a55b163fd4b327b45565957b3166a56a48"
+  head "https://github.com/zer0-star/arrlang.git", :tag => "v0.1.0"
 
   def install
     bin.install "bin/macosx/arrlang"
   end
 
   test do
-    system "bin/macosx/arrlang -h"
+    system "bin/macosx/arrlang", "-h"
   end
 end
